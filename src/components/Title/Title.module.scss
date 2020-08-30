@@ -1,0 +1,12 @@
+.title {
+    margin: 0;
+    color: #453636 ;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.secondary {
+    @extend .title;
+    
+    font-size: 40px;
+}

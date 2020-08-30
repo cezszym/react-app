@@ -1,0 +1,31 @@
+@keyframes appear {
+    0% {
+        opacity: 0.5;
+        right: 0;
+    }
+    100% {
+        opacity: 1;
+        right: 50px;
+    }
+}
+
+
+.wrapper {
+    margin: 1px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-height: 100vh;
+}
+
+.wrapper > img {
+    position: relative;
+    justify-self: end;
+}
+
+.animated {
+    @extend .wrapper;
+
+    right: 50px;
+    animation: appear 0.9s ease;
+}
+
