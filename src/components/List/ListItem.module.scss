@@ -26,7 +26,7 @@
 .wrapper {
   list-style: none;  
   margin-left: 30px;
-  padding: 0 10px 45px 0;
+  padding: 20px 10px 20px 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -45,15 +45,15 @@
 .image {
     flex-shrink: 0;
     margin-right: 30px;
-    width: 50px;
-    height: 60px;
+    width: 65px;
+    height: 80px;
     align-self: flex-start;
 }
 
 
 .description {
     margin: 10px 0 20px;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 300;
     max-width: 500px;
 }
@@ -68,23 +68,32 @@
     color: #453636
 }
 
-.enter, .appear{
-/*We give the list the initial dimension of the list button*/
-     opacity: 0;
+@media (max-width: 800px) {
+    .image {
+       display: none;
+    }
+    .description {
+        max-width: 300px;
+    }
 }
-/* This is where we can add the transition*/
-.enterActive, .appearActive {
-    opacity: 1;
-    transition: all 0.3s ease-in;
-}
-/* This fires as soon as the this.state.showList is false */
-.exit {
-    opacity: 1;
-    height: 100%;
-}
-/* fires as element leaves the DOM*/
-.exitActive {
-    height: 0;
-    opacity: 0;
-    transition: all 0.3s ease-in;
-}
+
+// .enter, .appear{
+// /*We give the list the initial dimension of the list button*/
+//      opacity: 0;
+// }
+// /* This is where we can add the transition*/
+// .enterActive, .appearActive {
+//     opacity: 1;
+//     transition: all 0.3s ease-in;
+// }
+// /* This fires as soon as the this.state.showList is false */
+// .exit {
+//     opacity: 1;
+//     height: 100%;
+// }
+// /* fires as element leaves the DOM*/
+// .exitActive {
+//     height: 0;
+//     opacity: 0;
+//     transition: all 0.3s ease-in;
+// }

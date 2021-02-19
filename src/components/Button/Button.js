@@ -12,9 +12,7 @@ const Button = ({children, href,
                     href ? (
                     <a 
                         href={href}
-                        target="_blank" 
                         className={buttonClass}
-                        rel="noopener noreferrer"
                     >
                     {children}
                     </a>

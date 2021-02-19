@@ -7,7 +7,7 @@ import ListHeader from './ListHeader/ListHeader';
 const ListWrapper = ({listName, items, isSub, ...props}) => (
     <>
     {items.length ? (
-        <div className={styles.wrapper}>
+        <div className={isSub ?  styles.subWrapper : styles.wrapper}>
         {listName && <ListHeader>{listName}</ListHeader>}
         <ul className={styles.listWrapper}>
 

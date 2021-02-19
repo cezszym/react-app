@@ -21,8 +21,14 @@ class Root extends React.Component {
         image: 'https://cdn.icon-icons.com/icons2/830/PNG/512/chemistry-tube_icon-icons.com_66637.png',
         title: 'Białkowe',
         description: 'Fiszki do nauki o aminokwasach białkowych',
-        link: '/fiszka/1',
+        link: '/fiszka/MIOcBXA8PnFR0Dc4ODS',
     },
+    {
+      image: 'https://cdn.icon-icons.com/icons2/830/PNG/512/chemistry-tube_icon-icons.com_66637.png',
+      title: 'Kiełbasy',
+      description: 'Fajne fiszki dla chłopów',
+      link: '/fiszka/MIOjzyDa3qWZG9URPwK',
+     },
 ]
   },
   {
@@ -60,7 +66,7 @@ class Root extends React.Component {
           <Switch>
             <Route exact path="/" component={HomeView} />
             <Route exact path="/fiszki" component={FishView} />
-            <Route exact path="/fiszka/1" component={FiszkaView} />
+            <Route path="/fiszka" component={FiszkaView} />
             <Route exact path="/quiz" component={QuizView} />
             <Route exact path="/poradnik" component={PoradnikView} />
           </Switch>

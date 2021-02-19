@@ -13,10 +13,14 @@ const HeaderNavigation = () => (
             <NavLink
             activeClassName={styles.navItemLinkActive} 
             className={styles.navItemLink} to="/quiz">quizy</NavLink></li>
-            <li className={styles.navItem}>
+            <li className={styles.navItem, styles.lastLink}>
             <NavLink
             activeClassName={styles.navItemLinkActive} 
             className={styles.navItemLink} to="/poradnik">poradnik weterynaryjny</NavLink></li>
+            <li className={styles.about}>
+            <NavLink
+            activeClassName={styles.navItemLinkActive} 
+            className={styles.navItemLink} to="/info">o stronie</NavLink></li>
         </ul>
     </nav>
 );

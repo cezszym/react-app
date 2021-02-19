@@ -1,11 +1,12 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 350px  1fr 60px 80px;
+    grid-template-columns: 350px  1fr 50px;
     align-items: center;
     padding: 10px 60px;
     max-height: 110px;
 
 }
+
 
 .logoImg {
     height: 130px;
@@ -15,4 +16,98 @@
 .socialImg {
     height: 35px;
     width: 35px;
+}
+
+.modal, .modalActive {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    background:#CFCCFF;
+    transition: .7s;
+}
+
+.modalActive {
+    opacity: 1;
+    z-index: 999;
+    transition: .7s;
+}
+
+.box, .boxActive {
+    z-index: 1000;
+    height: 50px;
+    width: 100%;
+    display: none;
+    align-self: flex-start;
+    background: transparent;
+    > div {
+        position: relative;
+        height: 7px;
+        border-radius: 3px;
+        width: 80%;
+        background: #918BEE;
+        transition: all .7s;
+    }
+}
+
+.boxActive {
+    > div {
+        transition: all .7s;
+    }
+    .midHam {
+        opacity: 0;
+    }
+    .topHam {
+        transform: rotate(45deg) translateY(20px);
+    }
+    .botHam {
+        transform: rotate(-45deg) translateY(-20px);
+    };
+}
+
+.linkList {
+    position: fixed;
+    top: 60px;
+    left: 5vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background: transparent;
+    li {
+        font-weight: 900;
+        font-size: 20px;
+        max-width: 200px;
+        padding-bottom: 70px;
+        text-align: center;
+        background: transparent;
+        a {
+            background: transparent;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .box, .boxActive {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logoImg {
+        height: auto;
+        width: 200px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr  1fr 50px;
+    }
 }

@@ -2,7 +2,11 @@
 
 .wrapper {
     background: transparent;
-    margin-top: 100px;
+    margin-top: 5vw;
+}
+
+.subWrapper {
+    background: transparent;
 }
 
 .listWrapper {
@@ -19,4 +23,10 @@
     width: 100%;
     text-align: center;
     margin-top: 150px;
+}
+
+@media (max-width: 800px) {
+    .listWrapper {
+        padding: 30px 0 0 15px;
+    }
 }

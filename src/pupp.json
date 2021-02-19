@@ -1,0 +1,44 @@
+{
+    "bialkowe": [
+        {
+           "list": ["endogenny", "obojętny", "z polarnym łańcuchem bocznym, nie wykazującym ładunku (grupa 2)", "glukogenny (szlak kwasu pirogronowego i acetlo CoA)", "destabilizujący α helisę"],
+           "image" : "https://i.ibb.co/RjJVZ9k/Glicyna.png",
+           "name" : "Glicyna (Gly, G)"
+        },
+        {  
+           "list": ["endogenny", "obojętny", "z apolarnym łańcuchem bocznym (grupa 1)", "glukogenny (szlak kwasu pirogronowego)", "stabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/PN66wTt/Alanina-1.png",
+           "name" : " Alanina (Ala, A)"
+        },
+        {  
+           "list": ["egzogenny", "obojętny", "z apolarnym łańcuchem bocznym (grupa 1)", "glukogenny (szlak kwasu bursztynowego)", "stabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/phj3Pcg/Walina.png",
+           "name" : "Walina (Val, V)"
+        },
+        {
+           "list": ["egzogenny", "obojętny", "z apolarnym łańcuchem bocznym (grupa 1)", "ketogenny (szlak acetoacetylo CoA)", "stabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/MRZb1wy/Leucyna.png",
+           "name" : "Leucyna (Leu, L)"
+        },
+        {
+           "list": ["egzogenny", "obojętny", "z apolarnym łańcuchem bocznym (grupa 1)", "mieszany", "destabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/4dcx3T9/Izoleucyna.png",
+           "name" : "Izoleucyna (Ile, I)"
+        },
+        { 
+           "list": ["endogenny", "obojętny", "z polarnym łańcuchem bocznym, nie wykazującym ładunku (grupa 2)", "glukogenny (szlak kwasu pirogronowego)", "destabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/x1qKqD9/Seryna.png",
+           "name" : "Seryna (Ser, S)"
+        },
+        {
+           "list": ["egzogenny", "obojętny", "z polarnym łańcuchem bocznym, nie wykazującym ładunku (grupa 2)", "glukogenny (szlak kwasu pirogronowego)", "destabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/bzLCRgn/Treonina.png",
+           "name" : "Treonina (Thr, T)"
+        },
+        {
+           "list": ["endogenny", "obojętny", "z polarnym łańcuchem bocznym, nie wykazującym ładunku (grupa 2)", "glukogenny (szlak kwasu pirogronowego)", "stabilizujący α helisę" ],
+           "image" : "https://i.ibb.co/KhC3Smv/Cysteina.png",
+           "name" : "Cysteina (Cys, C)"
+        }
+    ]
+   }

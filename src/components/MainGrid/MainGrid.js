@@ -12,7 +12,7 @@ const MainGrid = ({listName, items, imageLink}) => (
         </> :
         <>
         <DetailBox />
-        <img src={imageLink} alt={listName}></img>
+        <img className={styles.specialImg} src={imageLink} alt="background"></img>
         </>
         }
         </div>

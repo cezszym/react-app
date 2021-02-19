@@ -20,6 +20,15 @@
 .wrapper > img {
     position: relative;
     justify-self: end;
+    height: 30vw;
+}
+
+.specialImg {
+    background: transparent;
+    height: 43vw !important;
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
 }
 
 .animated {
@@ -29,3 +38,11 @@
     animation: appear 0.9s ease;
 }
 
+@media (max-width: 1200px) {
+    .wrapper  {
+        grid-template-columns: none;
+        > img {
+            display: none;
+        }
+    }
+}

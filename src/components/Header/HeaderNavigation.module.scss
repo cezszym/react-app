@@ -1,17 +1,32 @@
 
 
-.navItem {
+.navItem, .lastLink, .about {
     list-style: none;
     display: inline-block;
-    margin-right: 50px;
+    padding-right: 50px;
     &Link {
         text-decoration: none;
-        color: #453636;
-        font-size: 14px;
-
+        font-size: 1.1rem;
+        font-weight: 500;
         &Active {
-            font-weight: 700;
+            font-weight: 900;
         }
     };
 }
 
+.lastLink {
+    border-right: 2px solid #918BEE;
+
+}
+
+.about {
+    padding: 0 0 0 50px;
+    color: #453636;
+}
+
+
+@media (max-width: 1050px) {
+    .wrapper {
+        display: none;
+    }
+}

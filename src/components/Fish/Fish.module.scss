@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 50px;
+    padding: 0 5%;
     display: flex;
     position: relative;
     align-items: center;
@@ -8,22 +8,54 @@
     flex-direction: column;
 }
 
+.backgroundLeft {
+    position: absolute;
+    top: 80px;
+    left: 3vw;
+    z-index: 2;
+    background: transparent;
+    img {
+        height: 72vh;
+        background: transparent;
+    }
+}
+
+.name {
+    background: transparent;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.backgroundRight {
+    position: absolute;
+    top: 80px;
+    right: 3vw;
+    z-index: 2;
+    background: transparent;
+    img {
+        height: 72vh;
+        background: transparent;
+    }
+}
+
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px;
     background-color: #CFCCFF;
     min-height: 380px;
-    width: 380px;
+    width: 500px;
     border-radius: 15%;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .box img {
     background-color: transparent;
-    height: 300px;
-    width: 300px;
+    height: 60%;
+    width: 60%;
+    border-radius: 10px;
 }
 
 .listWrapper {
@@ -61,6 +93,43 @@ button {
         min-width: 40px;
         margin: 0 10px 0 10px;
     }
+}
 
+.goBack {
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
 
+@media (max-width: 1360px) {
+    .backgroundLeft, .backgroundRight {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .goBack {
+        display: inline;
+        position: absolute;
+        top: -25px;
+        font-size: 1.5rem;
+        color: #635CDA;
+        font-weight: 700;
+    }
+    .box li,.box ul {
+        background-color: transparent;
+        margin-top: 15px;
+        font-weight: 700;
+        color: #453636;
+        font-size: 0.9rem;
+    }    
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 88vw;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
 }
